@@ -1,0 +1,46 @@
+~~Preguidelines
+
+# decide how website looks like
+# structure of the website( k k rakhne, contact, resume, etc.)
+# choose the color schemes for your website(instagram ko kasto gradiant cha ni, chalaum chalaum lagne, premium feels, google ma color schemes bhanera search gara)
+# photos collect( afno, brandko, aru kk)
+# fonts choose(1 for title, 1 for others)
+
+# Grab the libraries( they make it much more easier to dev a website)
+ >Bootstrap (for navigation bar haru)(website banaunu bhaneko gaadi banako jastai manam, hami sisa, seat sabai afai banaudainam k, tyo katai bata kinera lyaumcham, same ho, website banauda ni sabai kura scratch gardainam, library haru bata tanera lyaucham and that makes things much more efficient and quick)
+ >Font Awesome(for icons of fb haru ani back to top option)
+ >jquery to simplify js (eta functional parts lina jancham)
+
+ # Code the website
+ 
+
+
+
+
+~~Some IMP points i understood while developing the portfolio website for convinient coding experience
+
+$ ray-cut glasses, straight back, Water.
+$ sidhai go to the folder jun ma you want to have your file ani open with vs code, that makes things so easy, like vs code ma gayera banairakhnupardaina, folder, file,,,ani save garihala project ani balla start to code.
+$ Ctrl + / to type in comment.
+$ Multiple cursors garna --> Alt+click wherever you want multiple cursors, pugepachi click anywhere, ni they vanish.
+$ Use keys in keyboard such as Home(to get to the leftmost of VS code), End(for rightmost area), PgUp(for topmost area), PgDn(for end of page sabse tala) and mouse scroll ali mathi tala hernalai.
+$ Use the TAB key frequently to complete the tags, that'll make things much more faster.
+$ Proper indentation and apt comments to avoid any anbiguity and confusion in the code.
+ 
+
+
+~~MERO portfolio website banauna rabin kalikote dai le follow garnubhayeko path which you can use in bulding other websites as well:
+
+1. Downloading the libraries.
+2. Starting to code, make index.html file(the file that first opens while accessing a webpage).
+3. Import all the libraries.
+4. Build website structure(sections haru and all).
+5. Building navigation(navbar/header portion).
+6. now bilding each component of the navbar.
+7. That is, building home section.
+8. Building resume section.
+9. Building portfolio section
+10. Building contact section
+11. Building footer section
+12. Scrolling behaviour
+13. Animations

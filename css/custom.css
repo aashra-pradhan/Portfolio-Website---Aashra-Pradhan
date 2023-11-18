@@ -1,0 +1,126 @@
+/* yo custom.css file ma chai hami afnai css lekhcham, not bootstrap or aru framework bata taneko */
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+/* we imported the google "arvo" font, basically copy paste ho afaile lekhe haina */
+
+/* common css */
+html,body{
+    margin:0;
+    padding:0;
+    font-family: 'Arvo', serif;
+    /* font family chai google arvo batai copy paste gareko */
+
+}
+
+/* header */
+
+/* we use . operator to access class to apply css(here navbar-brand is class */
+/* navbar brand for tyo logo ra aashra lekheko part,,,nav-bar link for home, resume haru, check code in index.html, you'll understand */
+.navbar-brand{
+    font-size: 1.5rem;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+}
+
+/* home */
+#home{
+    width: 100%;
+    height: 130vh;
+}
+
+#particles-js{
+    width: 100%;
+    height: 130vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(208, 70, 180);
+}
+
+#name{
+    margin-top: 16rem;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+
+#tagline{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+#learnmore{
+    padding: .4rem 1rem;
+    max-width: 10rem;
+    margin: 40px auto;
+    display: block;
+    border: 2px solid white;
+    border-radius: 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+    /* tyo link nadekhos bhanera a tag ko */
+}
+
+#lm{
+    color: white;
+    font-size: 25px;
+}
+
+/* resume */
+
+#resume{
+    width: 100%;
+    height: auto;
+    padding: 6rem 0;
+}
+
+.card{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card img{
+    height: 200px;
+}
+
+/* portfolio */
+#portfolio{
+    width: 100%;
+    height: auto;
+    padding: 4.5rem 0;
+}
+
+/* contact */
+#contact{
+    padding-top: 1rem;
+}
+#contact .container{
+    margin-top: 50px;
+}
+
+.link{
+    text-decoration: none;
+    color: rgb(208, 70, 180);
+}
+
+.link:hover{
+    text-decoration: none;
+    color: gold;
+}
+
+/* social */
+#social{
+    color: rgb(208, 70, 180)   ;
+}
+
+#social:hover{
+    color: rgb(55, 54, 54);
+}

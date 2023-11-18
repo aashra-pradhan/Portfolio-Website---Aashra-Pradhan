@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <!-- esko matlab tapaiko website kun device; mobile, laptop ma load bhako cha, tesko 100% width anusar adjust garcha, helps in responsive design-->
+    <!-- agi k mmero yo mathi meta viewport line wala code ma inverted commas nai close bhayeko thiyena rahecha k ani tesaile mero nav bar desired way ma display nabhayeko, cause bootstrAp activate nai bhayeko thiyena,, hushhh problem solved, thanks JOON:)))-->
+
+
+    <!-- CSS LIBRARIES(css ko code kinne thau hehe)  -->
+
+    <link rel="stylesheet" href="library/bootstrap/bootstrap.min.css">
+    <!-- hamile link use garera css file import garcham,,,css libraries chai head bhitra import garcham,,,href ma location deko ho library ko, hamro library bhanne folder cha, tyo bhitra ko bootstrap bhanne folder, tyo bhitra boostrap.min.css -->
+    <link rel="stylesheet" href="library/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- animate.css euta esto library for animations, normalize.css chai different browswer haru ma basic settings normalize garna, ani afnai css rakhna lai custom.css, aba hamile css library haru link garisakyam-->
+    <!-- Title -->
+    <title>Aashra Pradhan</title>
+    <link rel="icon" type="image/png" href="img/act.png">
+    <!-- hamile yo 'link' tag use gareko to add our favicon(the icon next to the title of the website, sano logo jasto),, yo favicon chai afaile banaunu parne huncha using photoshop, gimp,etc. ani best size is 16 pix x 16 pix, maile chai esko lai paint bata banako, href ma file source rakheko -->
+
+    <!-- Mero since navbar agi aairathiyena bootstrap link nabhayera, o joon taught me this alternative way, yo garda ni chalcha, tara agiko mai error debug bhaisakyo so yo comment out gardeko,,,,Joon le bhane jasari bootstrap ko getting started ma gayera simple code copy paste gareko for linking bootstrap(cause mero nv bar ko prob aairathyo)-->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <!-- getbootstrap. com ma janus, Docs option ma janus, components ma janus, navbar lai click garnu ani tyaha hami nav bar ko html paucham, teslai copy ra paste garnus -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
+            <!-- we afai added two more classes in nav, fixed top and py-3(which means inside and out padding of 3, py means padding in y axis), so hamro navbar wala line ali thick dekhincha -->
+            <div class="container">
+                <!-- container is a bootstrap ko class,we aafai additionally inside nav class, esko kaam bujhna bootstrap bujhnuparcha, basically bujhnuparda hamro tyo kura lai euta container ma rakhdincha so halka visible padding chai dekhincha, box ma haldeko jasto-->
+                <a class="navbar-brand" href="#home">
+                    <!-- mathi href ma # matra thiyo bootstrap bata import garda, hamile home rakhyam that means nav-bar brand le home section lai access garcha -->
+                    <img src="img/act.png" width="30" height="30" class="d-inline-block align-top" alt=""
+                        loading="lazy">
+                    Aashra Pradhan
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <!-- hamile mr-auto lai ml-auto banako to keep the nav bar in lhs, ml-auto means margin-left auto -->
+                        <li class="nav-item active">
+                            <a class="nav-link scroll-link" href="#home">Home</a>
+                            <!-- Esko matlab when you click on Home option in navbar you'll reach the section id with the namw "home" -->
+                            <!-- hamile chai afaile euta scroll-link bhanne class rakheko in
+                        home, resume, portfolio and contact, so that tyo class,
+                    lai hamile js(jquery) use garera scrolling behaviour maintain garna sakcham
+                afno website ma -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#resume">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#contact">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- tapaiko kati ota sections cha website ma, tyati otai sections banaunu, home, contact, resume, etc. -->
+
+    <!-- home -->
+    <section id="home">
+        <div id="particles-js"></div>
+        <div class="container">
+            <!-- yo container,row,col-md-12,etc. chai bootstrap kai class ho, they have css styles already defined for their classes, so esari nai hami bootstrap uses on and off use garira huncham -->
+            <div class="row">
+                <div class="col-md-12 justify-content-center">
+                    <!-- colmd12 and arko are bootstrap classes which will automatically justifyy content to center and medium size device ma column width 12 rakhcha -->
+                    <h1 id="name" class="wow fadeIn">Aashra Pradhan</h1>
+                    <!-- yo chai WOW ko animation haeko classes rakhera, class name matra rakhe pugcha
+                    , we've already brought wow.js and animate.css, those are our
+                librries, so we can use built in functions like fadeIn, slideInUp, etc. -->
+                    <p id="tagline" class="wow fadeIn">Crafting Code, Building Tomorrow: Unleashing the Power of Lines and Algorithms on
+                        the Digital Canvas.</p>
+                    <!-- for learn more button, #resume is inpage link, resume ma jancha if we press
+                learn more -->
+                    <a href="#resume" class="scroll-link wow fadeIn"><i class="fa fa-angle-down" id="learnmore">
+                            <p id="lm">Learn more</p>
+                        </i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- resume -->
+    <section id="resume">
+        <div class="container">
+            <div class="row">
+                <h2 class="title wow fadeIn">Hi, I'm Aashra Pradhan.</h2>
+                <p class="about wow fadeIn">Welcome to my digital abode, where lines of code come to life and
+                    ideas take flight. Let us explore the intersection of creativity and technology as I
+                    showcase my journey in the world of programming. Let us embark on a
+                    virtual tour through the realms of innovation. Hope you enjoy
+                    the ride!
+                </p>
+            </div>
+            <div class="row">
+                <h2 class="title wow fadeIn" style="padding-top: 0.5rem;">And some of what I do are:</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 py-3">
+                    <!-- yo chai kina col-md-4 gareko bhanda euta medium size device(md) ma 100% with ma 12 columns huncha so if we need three cols, we do col-md-4 then 4 bhag ma hissa huncha ta 100% width and obviously we get 3 columns -->
+                    <!-- py-3 class of bootstrap means padding along y-axis is 3 -->
+                    <div class="card wow slideInUp" style="max-width: 18rem; ">
+                        <img src="img/C.png" class="card-img-top" alt="C programming">
+                        <div class="card-body">
+                            <h5 class="card-title">C</h5>
+                            <p class="card-text">Diving into the coding realm with C as my first language, my
+                                programming journey started on a beautiful note.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3">
+                    <div class="card wow slideInUp" style="max-width: 18rem; ">
+                        <img src="img/java.png" class="card-img-top" alt="Java programming">
+                        <div class="card-body">
+                            <h5 class="card-title">Java</h5>
+                            <p class="card-text">Known to be robust, Java is the language I used for understanding the
+                                vital concepts of
+                                OOP and DSA as well.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 py-3">
+                    <div class="card wow slideInUp" style="max-width: 18rem; ">
+                        <img src="img/html.png" class="card-img-top" alt="HTML">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML</h5>
+                            <p class="card-text">The language of the web, HTML weaves innovation into every line of code
+                                elevating digital experiences.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 py-3">
+                    <div class="card wow slideInUp" style="max-width: 18rem;">
+                        <img src="img/css.png" class="card-img-top" alt="CSS">
+                        <div class="card-body">
+                            <h5 class="card-title">CSS</h5>
+                            <p class="card-text">Shaping digital aesthetics, one style at a time – where CSS transforms
+                                code into captivating visual narratives.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3">
+                    <div class="card wow slideInUp" style="max-width: 18rem; ">
+                        <img src="img/javascript.png" class="card-img-top" alt="Javascript">
+                        <div class="card-body">
+                            <h5 class="card-title">JavaScript</h5>
+                            <p class="card-text">Breathing life into the web with the dynamic rhythm of JavaScript –
+                                bringing in interactive digital experiences.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 py-3">
+                    <div class="card wow slideInUp" style="max-width: 18rem; ">
+                        <img src="img/nodejs.png" class="card-img-top" alt="Nodejs">
+                        <div class="card-body">
+                            <h5 class="card-title">Node JS</h5>
+                            <p class="card-text">Breathing life into the web with the dynamic rhythm of JavaScript –
+                                bringing in interactive digital experiences.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 py-3">
+                    <div class="card wow slideInUp" style="max-width: 18rem; ">
+                        <img src="img/expressjs.png" class="card-img-top" alt="Expressjs">
+                        <div class="card-body">
+                            <h5 class="card-title">Express JS</h5>
+                            <p class="card-text">Breathing life into the web with the dynamic rhythm of JavaScript –
+                                bringing in interactive digital experiences.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 py-3">
+                    <div class="card wow slideInUp" style="max-width: 18rem; ">
+                        <img src="img/mongodb.png" class="card-img-top" alt="MongoDB">
+                        <div class="card-body">
+                            <h5 class="card-title">MongoDB</h5>
+                            <p class="card-text">Breathing life into the web with the dynamic rhythm of JavaScript –
+                                bringing in interactive digital experiences.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <h2 class="title text-center w-100 wow fadeIn" style="padding-top: 0.5rem;">My Projects</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 py-3">
+                    <div class="card wow slideInUp" style="max-width: 18rem;">
+                        <img src="img/vote.png" class="card-img-top" alt="Votingsystem">
+                        <div class="card-body">
+                            <h5 class="card-title">Voting System in C</h5>
+                            <p class="card-text">A system that can be implemented in a real-time workplace with inputs
+                                from the employees and the authorities as well.</p>
+                            <a href="https://github.com/aashra-pradhan/Voting-system-in-C" class="btn btn-primary">View
+                                Code</a>
+                            <a href="https://aashra-pradhan.github.io/CapoTuner-webapp/" class="btn btn-primary">Go to
+                                system</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3">
+                    <div class="card wow slideInUp" style="max-width: 18rem;">
+                        <img src="img/music.jpg" class="card-img-top" alt="Capotuner webapp">
+                        <div class="card-body">
+                            <h5 class="card-title">CapoTuner webapp</h5>
+                            <p class="card-text">A webapp built to cater to all musical requirements of aspiring
+                                musicians. A musical haven for all musicians and music enthusiasts.</p>
+                            <a href="https://github.com/aashra-pradhan/CapoTuner-webapp" class="btn btn-primary">View
+                                Code</a>
+                            <a href="https://aashra-pradhan.github.io/CapoTuner-webapp/" class="btn btn-primary">Go to
+                                webapp</a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3">
+                    <div class="card wow slideInUp" style="max-width: 18rem;">
+                        <img src="img/PDF-Merger.png" class="card-img-top" alt="PDF merger webapp">
+                        <div class="card-body">
+                            <h5 class="card-title">PDF Merger webapp</h5>
+                            <p class="card-text">A webapp built using HTML, CSS and vanilla JS, that users can input pdf
+                                files and get the files merged for their convenience.</p>
+                            <a href="https://github.com/aashra-pradhan/PDF-merger-webapp" class="btn btn-primary">View
+                                Code</a>
+                            <a href="https://aashra-pradhan.github.io/CapoTuner-webapp/" class="btn btn-primary">Go to
+                                webapp</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+        <div class="container wow fadeIn"
+            style="border: 1px solid black; background-color: rgb(240, 95, 211); padding-top: 20px; padding-bottom: 20px; width:40%">
+            <div class="container d-flex justify-content-center">
+                <h2 class="featurette-heading fw-normal lh-1 wow fadeIn"
+                    style="text-align: center; padding-left:10px; padding-right: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    Contact me, I'd love to hear from you!</h2>
+
+            </div>
+            <div class="container d-flex align-items-center justify-content-center">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputName1" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">
+                            <p style="font-size: 10px;">This will remain confidential.</p>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputfeed1" class="form-label">Feedback</label>
+                        <input type="text" class="form-control" id="exampleInputfeed1" aria-describedby="emailHelp">
+                    </div>
+
+                    <button type="submit" class="btn btn-warning my-3">Submit</button>
+                </form>
+            </div>
+
+
+
+
+        </div>
+        <div class="container d-flex justify-content-center">
+            <h2 class="featurette-heading fw-normal lh-1" style="font-weight: bolder;">Find me on:</h2>
+
+        </div>
+        <div class="container d-flex justify-content-center" style="margin-top: 10px;">
+            <a href="https://github.com/aashra-pradhan" class="link">GitHub</a>
+            <pre>  </pre>
+            <a href="https://www.linkedin.com/in/aashra-pradhan-96b8b4247/" class="link">LinkedIn</a>
+        </div>
+        <div class="container d-flex justify-content-center" style="margin-top: auto; color:black;">
+            E-Mail: aashrapradhan68@gmail.com<br>
+            Phone: +977 9842465760
+        </div>
+        </div>
+
+    </section>
+
+    <!-- back to top icon -->
+    <div class="container d-flex justify-content-center">
+        <a href="#home" id="backtotop" class="scroll-link"><i class="fa fa-arrow-circle-up fa-2x"
+                style="padding-top:20px; padding-right: 1rem;" id="social"></i></a>
+        <a href="https://github.com/aashra-pradhan" id="github"><i class="fa fa-github fa-2x"
+                style="padding-top:20px; padding-right: 1rem;" id="social"></i></a>
+        <a href="https://www.linkedin.com/in/aashra-pradhan-96b8b4247/" id="linkedIn"><i class="fa fa-linkedin fa-2x"
+                style="padding-top:20px;" id="social"></i></a>
+
+        <!-- here #home bhanera inpage link deko, ani here i means icon tag that be checked from bootstrap, fa-3x le icon ko size 3x badhako -->
+    </div>
+    <!-- Footer -->
+    <!-- simple  footer -->
+    <div class="d-flex flex-column flex-sm-row justify-content-center py-3 my-3 border-top">
+        <p style="color: rgb(93, 93, 93); font-size: 12px;">© 2023 Aashra Pradhan. All rights reserved.</p>
+    </div>
+
+    <!--JS Libraries import gareko(js chai body bhitra import garcham)( we do that using script bhanne tag)  -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- hami script tag bhitra chai kei content lekhdainam but tyasko source attribute rakhcham ,,smooth-scroll.js if for smooth scrolling,,wow.js if for animation, to make the website look wow,,,app.js and particle.js is for the moving particles(tyo joon ko app ma pani cha ni chemistry ko bond haru jasto)-->
+
+    <script>
+        //for WOW.js library/framework activation for animation purposes
+        new WOW().init();
+        
+        // yo chai hamile scrolling behaviour lyauna afaile lekheko jquery code 
+        
+        $('.scroll-link').on('click', function (e) {
+            e.preventDefault();
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top - 50 }, 500);
+        });
+
+        //esko matlab is, jaba .scroll-link class thichincha, taba, euta function ma direct
+        //hoincha, jasle e as a parameter lincha.
+        //jaba yo function bhitra chirincha, default behaviour rokincha,
+        //ani html ra body chai animate bhayera scroll hoincha
+        //500 is time in miliseconds, kati time ma chai scroll garne bhanera
+
+        // for active nav-item
+        $('.nav-item').on('click', function (e) {
+            $('.nav-item').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        //esko matlab is jaba euta nav-item ma click garincha,
+        //sabai nav item bhitra ko 'active' class hataincha ani yo class(this) ma chai
+        //active class halincha
+
+        // for active nav-item by tracking scroll behavior
+        //tara yo chalena tesaile comment out gareko
+        // const sections = document.querySelectorAll("section");
+        // const navLi = document.querySelectorAll("nav .container ul li");
+        // window.addEventListener("scroll", () => {
+        //     let current = "";
+        //     sections.forEach((section) => {
+        //         const sectionTop = section.offsetTop;
+        //         const sectionHeight = section.clientHeight;
+        //         if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        //             current = section.getAttribute("id");
+        //         }
+        //     });
+
+        //     navLi.forEach((li) => {
+        //         li.classList.remove("active");
+        //         if (li.classList.contains(current)) {
+        //             li.classList.add("active");
+        //         }
+        //     });
+        // });
+
+    </script>
+</body>
+
+</html>
