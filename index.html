@@ -22,7 +22,7 @@
     <!-- animate.css euta esto library for animations, normalize.css chai different browswer haru ma basic settings normalize garna, ani afnai css rakhna lai custom.css, aba hamile css library haru link garisakyam-->
     <!-- Title -->
     <title>Aashra Pradhan</title>
-    <link rel="icon" type="image/png" href="img/act.png">
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png">
     <!-- hamile yo 'link' tag use gareko to add our favicon(the icon next to the title of the website, sano logo jasto),, yo favicon chai afaile banaunu parne huncha using photoshop, gimp,etc. ani best size is 16 pix x 16 pix, maile chai esko lai paint bata banako, href ma file source rakheko -->
 
     <!-- Mero since navbar agi aairathiyena bootstrap link nabhayera, o joon taught me this alternative way, yo garda ni chalcha, tara agiko mai error debug bhaisakyo so yo comment out gardeko,,,,Joon le bhane jasari bootstrap ko getting started ma gayera simple code copy paste gareko for linking bootstrap(cause mero nv bar ko prob aairathyo)-->
@@ -43,11 +43,11 @@
             <!-- we afai added two more classes in nav, fixed top and py-3(which means inside and out padding of 3, py means padding in y axis), so hamro navbar wala line ali thick dekhincha -->
             <div class="container">
                 <!-- container is a bootstrap ko class,we aafai additionally inside nav class, esko kaam bujhna bootstrap bujhnuparcha, basically bujhnuparda hamro tyo kura lai euta container ma rakhdincha so halka visible padding chai dekhincha, box ma haldeko jasto-->
-                <a class="navbar-brand" href="#home">
+                <a class="navbar-brand scroll-link" href="#home">
                     <!-- mathi href ma # matra thiyo bootstrap bata import garda, hamile home rakhyam that means nav-bar brand le home section lai access garcha -->
-                    <img src="img/act.png" width="30" height="30" class="d-inline-block align-top" alt=""
+                    <img src="img/favicon-32x32.png" width="30" height="30" class="d-inline-block align-top" alt=""
                         loading="lazy">
-                    Aashra Pradhan
+                   <b id="brandname"> Aashra Pradhan </b>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -59,21 +59,21 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- hamile mr-auto lai ml-auto banako to keep the nav bar in lhs, ml-auto means margin-left auto -->
                         <li class="nav-item active">
-                            <a class="nav-link scroll-link" href="#home">Home</a>
+                            <a class="nav-link scroll-link" href="#home" id="hovergold">Home</a>
                             <!-- Esko matlab when you click on Home option in navbar you'll reach the section id with the namw "home" -->
                             <!-- hamile chai afaile euta scroll-link bhanne class rakheko in
                         home, resume, portfolio and contact, so that tyo class,
                     lai hamile js(jquery) use garera scrolling behaviour maintain garna sakcham
                 afno website ma -->
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link scroll-link" href="#resume">Resume</a>
+                        <li class="nav-item active">
+                            <a class="nav-link scroll-link" href="#resume" id="hovergold">Resume</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link scroll-link" href="#portfolio">Portfolio</a>
+                        <li class="nav-item active">
+                            <a class="nav-link scroll-link" href="#portfolio" id="hovergold">Portfolio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link scroll-link" href="#contact">Contact</a>
+                        <li class="nav-item active">
+                            <a class="nav-link scroll-link" href="#contact" id="hovergold">Contact</a>
                         </li>
 
                     </ul>
@@ -112,17 +112,29 @@
     <!-- resume -->
     <section id="resume">
         <div class="container">
+              <!-- //my picture -->
+              <div class="row">
+                <h2 class="title wow fadeIn" style=" margin: auto; padding-bottom: 1rem; ">Hello world!</h2>
+            </div>
+
+            <div class="row d-flex align-items-center" style="margin-left: 300px; margin-right: 300px;">
+                <div class="container">
+                        <img src="img/aashra1.jpg" class="card-img-top wow slideInUp" height="560" alt="Aashra pic 1">
+                    </div>
+              </div>  
+
             <div class="row">
-                <h2 class="title wow fadeIn">Hi, I'm Aashra Pradhan.</h2>
-                <p class="about wow fadeIn">Welcome to my digital abode, where lines of code come to life and
+                <h2 class="title wow fadeIn" style="padding-top: 4rem;">I'm Aashra Pradhan.</h2>
+                <p class="about wow fadeIn" style="text-align: justify; margin: auto;">Welcome to my digital abode, where lines of code come to life and
                     ideas take flight. Let us explore the intersection of creativity and technology as I
-                    showcase my journey in the world of programming. Let us embark on a
+                    showcase my journey in the world of programming. Apart from programming, I also delve into music and playing musical instruments like the keyboard and the violin are the pleasures I relish in life. Let us embark on a
                     virtual tour through the realms of innovation. Hope you enjoy
                     the ride!
                 </p>
             </div>
+
             <div class="row">
-                <h2 class="title wow fadeIn" style="padding-top: 0.5rem;">And some of what I do are:</h2>
+                <h2 class="title wow fadeIn" style="padding-top: 2.5rem; padding-bottom:1rem;margin: auto;">And some of what I do are:</h2>
             </div>
 
             <div class="row">
@@ -192,8 +204,7 @@
                         <img src="img/nodejs.png" class="card-img-top" alt="Nodejs">
                         <div class="card-body">
                             <h5 class="card-title">Node JS</h5>
-                            <p class="card-text">Breathing life into the web with the dynamic rhythm of JavaScript –
-                                bringing in interactive digital experiences.</p>
+                            <p class="card-text">A powerful JavaScript runtime, Nodejs empowers server-side development with its efficiency and event-driven architecture.</p>
 
                         </div>
                     </div>
@@ -204,8 +215,7 @@
                         <img src="img/expressjs.png" class="card-img-top" alt="Expressjs">
                         <div class="card-body">
                             <h5 class="card-title">Express JS</h5>
-                            <p class="card-text">Breathing life into the web with the dynamic rhythm of JavaScript –
-                                bringing in interactive digital experiences.</p>
+                            <p class="card-text">Express.js, a flexible Node.js web application framework, simplifies building robust and scalable web applications.</p>
 
                         </div>
                     </div>
@@ -216,13 +226,70 @@
                         <img src="img/mongodb.png" class="card-img-top" alt="MongoDB">
                         <div class="card-body">
                             <h5 class="card-title">MongoDB</h5>
-                            <p class="card-text">Breathing life into the web with the dynamic rhythm of JavaScript –
-                                bringing in interactive digital experiences.</p>
+                            <p class="card-text">MongoDB is a leading NoSQL database which offers a scalable and flexible solution for storing and retrieving data.</p>
 
                         </div>
                     </div>
                 </div>
             </div>
+            
+
+            <div class="row">
+                <h2 class="title wow fadeIn" style="padding-top: 4rem; margin: auto; padding-bottom: 1rem;">And some of what I ALSO do are:</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 py-3">
+                    <!-- yo chai kina col-md-4 gareko bhanda euta medium size device(md) ma 100% with ma 12 columns huncha so if we need three cols, we do col-md-4 then 4 bhag ma hissa huncha ta 100% width and obviously we get 3 columns -->
+                    <!-- py-3 class of bootstrap means padding along y-axis is 3 -->
+                    <div class="card wow slideInUp" style="max-width: 14rem; ">
+                        <img src="img/violin.png" class="card-img-top" alt="Violin">
+                        <div class="card-body">
+                            <h5 class="card-title">Violin</h5>
+                            <p class="card-text">I have been passionately playing the violin for three years, and it has become my cherished musical escape.</p>
+                                <a href="https://www.instagram.com/aashra.music/" class="btn btn-primary">Watch me playing</a>
+    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 py-3">
+                    <div class="card wow slideInUp" style="max-width: 14rem; ">
+                        <img src="img/piano.jpeg" class="card-img-top" alt="Keyboard">
+                        <div class="card-body">
+                            <h5 class="card-title">Piano</h5>
+                            <p class="card-text">Since my early days, piano hasn't just been a hobby or passion, but my cherished musical rendezvous that brings me immense joy.</p>
+                            <a href="https://www.instagram.com/aashra.music/" class="btn btn-primary">Watch me playing</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 py-3">
+                    <div class="card wow slideInUp" style="max-width: 14rem; ">
+                        <img src="img/aashraviolin.png" class="card-img-top" alt="Aashra playing the violin">
+                        <div class="card-body">
+                            <h5 class="card-title">aashra.music</h5>
+                            <p class="card-text">I curate an Instagram page dedicated to sharing my musical performances, fostering a community, a safe space for enthusiasts to connect.</p>
+                            <a href="https://www.instagram.com/aashra.music/" class="btn btn-primary">aashra.music</a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 py-3">
+                    <div class="card wow slideInUp" style="max-width: 14rem; ">
+                        <img src="img/mediumarticle.png" class="card-img-top" alt="Blogs">
+                        <div class="card-body">
+                            <h5 class="card-title">Blogs</h5>
+                            <p class="card-text">I also contribute to Medium, sharing my thoughts and expertise through blogs and articles.</p>
+                            <a href="https://medium.com/@aashrapradhan68/how-mystifying-is-life-isnt-it-a7968ff20035" class="btn btn-primary">Visit my blog profile</a>
+
+                        </div>
+                    </div>
+                </div>
+                </div>
         </div>
     </section>
 
@@ -230,7 +297,7 @@
     <section id="portfolio">
         <div class="container">
             <div class="row">
-                <h2 class="title text-center w-100 wow fadeIn" style="padding-top: 0.5rem;">My Projects</h2>
+                <h2 class="title text-center w-100 wow fadeIn">My Coding Projects</h2>
             </div>
             <div class="row">
                 <div class="col-md-4 py-3">
@@ -242,8 +309,6 @@
                                 from the employees and the authorities as well.</p>
                             <a href="https://github.com/aashra-pradhan/Voting-system-in-C" class="btn btn-primary">View
                                 Code</a>
-                            <a href="https://aashra-pradhan.github.io/CapoTuner-webapp/" class="btn btn-primary">Go to
-                                system</a>
 
                         </div>
                     </div>
@@ -288,7 +353,7 @@
 
     <!-- contact -->
     <section id="contact">
-        <div class="container wow fadeIn"
+        <div class="container wow fadeIn" id="contactform"
             style="border: 1px solid black; background-color: rgb(240, 95, 211); padding-top: 20px; padding-bottom: 20px; width:40%">
             <div class="container d-flex justify-content-center">
                 <h2 class="featurette-heading fw-normal lh-1 wow fadeIn"
@@ -331,10 +396,12 @@
             <a href="https://github.com/aashra-pradhan" class="link">GitHub</a>
             <pre>  </pre>
             <a href="https://www.linkedin.com/in/aashra-pradhan-96b8b4247/" class="link">LinkedIn</a>
+            <pre>  </pre>
+            <a href="https://www.instagram.com/aashra.music/" class="link">Instagram</a>
         </div>
         <div class="container d-flex justify-content-center" style="margin-top: auto; color:black;">
-            E-Mail: aashrapradhan68@gmail.com<br>
-            Phone: +977 9842465760
+           <p>E-Mail : aashrapradhan68@gmail.com <br>
+            Contact : +977 9842465760</p>
         </div>
         </div>
 
@@ -344,10 +411,12 @@
     <div class="container d-flex justify-content-center">
         <a href="#home" id="backtotop" class="scroll-link"><i class="fa fa-arrow-circle-up fa-2x"
                 style="padding-top:20px; padding-right: 1rem;" id="social"></i></a>
-        <a href="https://github.com/aashra-pradhan" id="github"><i class="fa fa-github fa-2x"
+        <a href="https://github.com/aashra-pradhan" id="social"><i class="fa fa-github fa-2x"
                 style="padding-top:20px; padding-right: 1rem;" id="social"></i></a>
-        <a href="https://www.linkedin.com/in/aashra-pradhan-96b8b4247/" id="linkedIn"><i class="fa fa-linkedin fa-2x"
-                style="padding-top:20px;" id="social"></i></a>
+                <a href="https://www.instagram.com/aashra.music/" id="social"><i class="fa fa-instagram fa-2x"
+                    style="padding-top:20px; padding-right: 1rem;" id="social"></i></a>
+                    <a href="https://www.linkedin.com/in/aashra-pradhan-96b8b4247/" id="social"><i class="fa fa-linkedin fa-2x"
+                        style="padding-top:20px;" id="social"></i></a>
 
         <!-- here #home bhanera inpage link deko, ani here i means icon tag that be checked from bootstrap, fa-3x le icon ko size 3x badhako -->
     </div>
@@ -383,11 +452,13 @@
         //ani html ra body chai animate bhayera scroll hoincha
         //500 is time in miliseconds, kati time ma chai scroll garne bhanera
 
-        // for active nav-item
-        $('.nav-item').on('click', function (e) {
-            $('.nav-item').removeClass('active');
-            $(this).addClass('active');
-        });
+        // // for each active nav-item
+        // $('.nav-item').on('click', function (e) {
+        //     $('.nav-item').removeClass('active');
+        //     $(this).addClass('active');
+        // });
+        //ahile ko lagi yo comment out gardeko because ahile tyo scroll garda ni active change hune
+        //garna sakeko chuina so naramro nadekhos bhanera sablai always active ma rakhdeko chu
 
         //esko matlab is jaba euta nav-item ma click garincha,
         //sabai nav item bhitra ko 'active' class hataincha ani yo class(this) ma chai
