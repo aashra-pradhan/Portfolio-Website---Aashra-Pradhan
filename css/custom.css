@@ -144,6 +144,17 @@ a:hover{
          padding-top: 20px; 
          padding-bottom: 20px; 
          width:100%;
-         margin:auto;
+    }
+
+    #description{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+   
+    #aashrapic{
+        height: 20px;
+        width: 100px;
+
     }
   }
