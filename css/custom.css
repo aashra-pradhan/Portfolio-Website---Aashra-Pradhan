@@ -107,9 +107,9 @@ a {
   transition: color 0.2s ease;
 }
 
-.nav-links a:hover {
+/* .nav-links a:hover {
   color: var(--accent);
-}
+} */
 
 .nav-links .nav-contact {
   color: var(--text);
@@ -209,9 +209,9 @@ a {
   transition: color 0.2s ease;
 }
 
-.text-link:hover {
+/* .text-link:hover {
   color: var(--accent);
-}
+} */
 
 .hero-note {
   margin-top: 35px;
@@ -552,9 +552,9 @@ a {
   transition: color 0.2s ease;
 }
 
-.social-links a:hover {
+/* .social-links a:hover {
   color: #d9936e;
-}
+} */
 
 /* Footer */
 
@@ -579,6 +579,24 @@ a {
 .footer-content p {
   color: #aaa69e;
   font-size: 10px;
+}
+
+/* ========================================
+   LINKS hover
+======================================== */
+
+.text-link:hover {
+  color: #8f4827;
+  text-decoration-color: #8f4827;
+  gap: 10px;
+}
+
+.nav-links a:hover {
+  color: #b96836;
+}
+
+.social-links a:hover {
+  color: #8f4827;
 }
 
 /* Responsive design */
