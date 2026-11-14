@@ -3,490 +3,571 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
-    <!-- esko matlab tapaiko website kun device; mobile, laptop ma load bhako cha, tesko 100% width anusar adjust garcha, helps in responsive design-->
-    <!-- agi k mmero yo mathi meta viewport line wala code ma inverted commas nai close bhayeko thiyena rahecha k ani tesaile mero nav bar desired way ma display nabhayeko, cause bootstrAp activate nai bhayeko thiyena,, hushhh problem solved, thanks JOON:)))-->
+    <meta name="description"
+        content="Aashra Pradhan — Information Technology graduate working across data engineering, research, technology and creative pursuits.">
 
+    <meta name="author" content="Aashra Pradhan">
+    <meta name="theme-color" content="#f8f7f3">
 
-    <!-- CSS LIBRARIES(css ko code kinne thau hehe)  -->
+    <title>Aashra Pradhan — Technology, Research & Creativity</title>
 
-    <link rel="stylesheet" href="library/bootstrap/bootstrap.min.css">
-    <!-- hamile link use garera css file import garcham,,,css libraries chai head bhitra import garcham,,,href ma location deko ho library ko, hamro library bhanne folder cha, tyo bhitra ko bootstrap bhanne folder, tyo bhitra boostrap.min.css -->
-    <link rel="stylesheet" href="library/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"> -->
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/custom.css">
-    <!-- animate.css euta esto library for animations, normalize.css chai different browswer haru ma basic settings normalize garna, ani afnai css rakhna lai custom.css, aba hamile css library haru link garisakyam-->
-    <!-- Title -->
-    <title>Aashra Pradhan</title>
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png">
-    <!-- hamile yo 'link' tag use gareko to add our favicon(the icon next to the title of the website, sano logo jasto),, yo favicon chai afaile banaunu parne huncha using photoshop, gimp,etc. ani best size is 16 pix x 16 pix, maile chai esko lai paint bata banako, href ma file source rakheko -->
-
-    <!-- Mero since navbar agi aairathiyena bootstrap link nabhayera, o joon taught me this alternative way, yo garda ni chalcha, tara agiko mai error debug bhaisakyo so yo comment out gardeko,,,,Joon le bhane jasari bootstrap ko getting started ma gayera simple code copy paste gareko for linking bootstrap(cause mero nv bar ko prob aairathyo)-->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
-
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <header>
-        <!-- getbootstrap. com ma janus, Docs option ma janus, components ma janus, navbar lai click garnu ani tyaha hami nav bar ko html paucham, teslai copy ra paste garnus -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
-            <!-- we afai added two more classes in nav, fixed top and py-3(which means inside and out padding of 3, py means padding in y axis), so hamro navbar wala line ali thick dekhincha -->
-            <div class="container">
-                <!-- container is a bootstrap ko class,we aafai additionally inside nav class, esko kaam bujhna bootstrap bujhnuparcha, basically bujhnuparda hamro tyo kura lai euta container ma rakhdincha so halka visible padding chai dekhincha, box ma haldeko jasto-->
-                <a class="navbar-brand scroll-link" href="#home">
-                    <!-- mathi href ma # matra thiyo bootstrap bata import garda, hamile home rakhyam that means nav-bar brand le home section lai access garcha -->
-                    <img src="img/favicon-32x32.png" width="30" height="30" class="d-inline-block align-top" alt=""
-                        loading="lazy">
-                   <b id="brandname"> Aashra Pradhan </b>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <header class="site-header">
+        <nav class="navigation container" aria-label="Main navigation">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <!-- hamile mr-auto lai ml-auto banako to keep the nav bar in lhs, ml-auto means margin-left auto -->
-                        <li class="nav-item active">
-                            <a class="nav-link scroll-link" href="#home" id="hovergold">Home</a>
-                            <!-- Esko matlab when you click on Home option in navbar you'll reach the section id with the namw "home" -->
-                            <!-- hamile chai afaile euta scroll-link bhanne class rakheko in
-                        home, resume, portfolio and contact, so that tyo class,
-                    lai hamile js(jquery) use garera scrolling behaviour maintain garna sakcham
-                afno website ma -->
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link scroll-link" href="#resume" id="hovergold">Resume</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link scroll-link" href="#portfolio" id="hovergold">Portfolio</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link scroll-link" href="#contact" id="hovergold">Contact</a>
-                        </li>
+            <a href="#home" class="wordmark">
+                aashra<span>.</span>
+            </a>
 
-                    </ul>
-                </div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#work">Selected work</a>
+                <a href="#beyond">Beyond work</a>
+                <a href="#contact" class="nav-contact">Let's connect ↗</a>
             </div>
+
         </nav>
     </header>
 
-    <!-- tapaiko kati ota sections cha website ma, tyati otai sections banaunu, home, contact, resume, etc. -->
 
-    <!-- home -->
-    <section id="home">
-        <div id="particles-js"></div>
-        <div class="container">
-            <!-- yo container,row,col-md-12,etc. chai bootstrap kai class ho, they have css styles already defined for their classes, so esari nai hami bootstrap uses on and off use garira huncham -->
-            <div class="row">
-                <div class="col-md-12 justify-content-center">
-                    <!-- colmd12 and arko are bootstrap classes which will automatically justifyy content to center and medium size device ma column width 12 rakhcha -->
-                    <h1 id="name" class="wow fadeIn">Aashra Pradhan</h1>
-                    <!-- yo chai WOW ko animation haeko classes rakhera, class name matra rakhe pugcha
-                    , we've already brought wow.js and animate.css, those are our
-                librries, so we can use built in functions like fadeIn, slideInUp, etc. -->
-                    <p id="tagline" class="wow fadeIn">Crafting Code, Building Tomorrow: Unleashing the Power of Lines and Algorithms on
-                        the Digital Canvas.</p>
-                    <!-- for learn more button, #resume is inpage link, resume ma jancha if we press
-                learn more -->
-                    <a href="#resume" class="scroll-link wow fadeIn"><i class="fa fa-angle-down" id="learnmore">
-                            <p id="lm">Learn more</p>
-                        </i></a>
-                </div>
-            </div>
+    <main>
 
-        </div>
-    </section>
+        <!-- Hero -->
+        <section class="hero container" id="home">
 
-    <!-- resume -->
-    <section id="resume">
-        <div class="container">
-              <!-- //my picture -->
-              <div class="row">
-                <h2 class="title wow fadeIn" style=" margin: auto; padding-bottom: 1rem; ">Hello world!</h2>
-            </div>
+            <div class="hero-content">
 
-            <div class="row d-flex align-items-center" style="margin-left: 300px; margin-right: 300px;" id="aash">
-                <div class="container" id="aashrapic">
-                        <img src="img/aashra1.jpg" class="card-img-top wow slideInUp" height="560"  alt="Aashra pic 1">
-                    </div>
-              </div>  
-
-            <div class="row">
-                <h2 class="title wow fadeIn" style="padding-top: 4rem;">I'm Aashra Pradhan.</h2>
-                <p class="about wow fadeIn" style="text-align: justify; margin: auto;" id="description">Welcome to my digital abode, where lines of code come to life and
-                    ideas take flight. Let us explore the intersection of creativity and technology as I
-                    showcase my journey in the world of programming. Apart from programming, I also delve into music and playing musical instruments like the keyboard and the violin are the pleasures I relish in life. Let us embark on a
-                    virtual tour through the realms of innovation. Hope you enjoy
-                    the ride!
+                <p class="eyebrow">
+                    INFORMATION TECHNOLOGY · KATHMANDU, NEPAL
                 </p>
-            </div>
 
-            <div class="row">
-                <h2 class="title wow fadeIn" style="padding-top: 2.5rem; padding-bottom:1rem;margin: auto;">And some of what I do are:</h2>
-            </div>
+                <h1>
+                    Always finding a way.
+                    <span>Always becoming.</span>
+                </h1>
 
-            <div class="row">
-                <div class="col-md-3 py-3">
-                    <!-- yo chai kina col-md-4 gareko bhanda euta medium size device(md) ma 100% with ma 12 columns huncha so if we need three cols, we do col-md-4 then 4 bhag ma hissa huncha ta 100% width and obviously we get 3 columns -->
-                    <!-- py-3 class of bootstrap means padding along y-axis is 3 -->
-                    <div class="card wow slideInUp" style="max-width: 18rem; ">
-                        <img src="img/C.png" class="card-img-top" alt="C programming">
-                        <div class="card-body">
-                            <h5 class="card-title">C</h5>
-                            <p class="card-text">Diving into the coding realm with C as my first language, my
-                                programming journey started on a beautiful note.</p>
+                <p class="hero-description">
+                    I'm Aashra. I'm an Information Technology graduate
+                    currently working across data engineering and
+                    technology, with a constant curiosity for
+                    people, ideas and creativity.
+                </p>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 py-3">
-                    <div class="card wow slideInUp" style="max-width: 18rem; ">
-                        <img src="img/java.png" class="card-img-top" alt="Java programming">
-                        <div class="card-body">
-                            <h5 class="card-title">Java</h5>
-                            <p class="card-text">Known to be robust, Java is the language I used for understanding the
-                                vital concepts of
-                                OOP and DSA as well.</p>
+                <div class="hero-actions">
+                    <a href="#about" class="button-primary">
+                        A little about me
+                    </a>
 
-                        </div>
-                    </div>
+                    <a href="https://www.linkedin.com/in/aashra-pradhan/" target="_blank" rel="noopener noreferrer"
+                        class="text-link">
+                        Find me on LinkedIn ↗
+                    </a>
                 </div>
 
-                <div class="col-md-3 py-3">
-                    <div class="card wow slideInUp" style="max-width: 18rem; ">
-                        <img src="img/html.png" class="card-img-top" alt="HTML">
-                        <div class="card-body">
-                            <h5 class="card-title">HTML</h5>
-                            <p class="card-text">The language of the web, HTML weaves innovation into every line of code
-                                elevating digital experiences.</p>
+                <p class="hero-note">
+                    Currently indulged with Ycotek.
+                </p>
 
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 py-3">
-                    <div class="card wow slideInUp" style="max-width: 18rem;">
-                        <img src="img/css.png" class="card-img-top" alt="CSS">
-                        <div class="card-body">
-                            <h5 class="card-title">CSS</h5>
-                            <p class="card-text">Shaping digital aesthetics, one style at a time – where CSS transforms
-                                code into captivating visual narratives.</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 py-3">
-                    <div class="card wow slideInUp" style="max-width: 18rem; ">
-                        <img src="img/javascript.png" class="card-img-top" alt="Javascript">
-                        <div class="card-body">
-                            <h5 class="card-title">JavaScript</h5>
-                            <p class="card-text">Breathing life into the web with the dynamic rhythm of JavaScript –
-                                bringing in interactive digital experiences.</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 py-3">
-                    <div class="card wow slideInUp" style="max-width: 18rem; ">
-                        <img src="img/nodejs.png" class="card-img-top" alt="Nodejs">
-                        <div class="card-body">
-                            <h5 class="card-title">Node JS</h5>
-                            <p class="card-text">A powerful JavaScript runtime, Nodejs empowers server-side development with its efficiency and event-driven architecture.</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 py-3">
-                    <div class="card wow slideInUp" style="max-width: 18rem; ">
-                        <img src="img/expressjs.png" class="card-img-top" alt="Expressjs">
-                        <div class="card-body">
-                            <h5 class="card-title">Express JS</h5>
-                            <p class="card-text">Express.js, a flexible Node.js web application framework, simplifies building robust and scalable web applications.</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 py-3">
-                    <div class="card wow slideInUp" style="max-width: 18rem; ">
-                        <img src="img/mongodb.png" class="card-img-top" alt="MongoDB">
-                        <div class="card-body">
-                            <h5 class="card-title">MongoDB</h5>
-                            <p class="card-text">MongoDB is a leading NoSQL database which offers a scalable and flexible solution for storing and retrieving data.</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-
-            <div class="row">
-                <h2 class="title wow fadeIn" style="padding-top: 4rem; margin: auto; padding-bottom: 1rem;">And some of what I ALSO do are:</h2>
-            </div>
-
-            <div class="row">
-                <div class="col-md-3 py-3">
-                    <!-- yo chai kina col-md-4 gareko bhanda euta medium size device(md) ma 100% with ma 12 columns huncha so if we need three cols, we do col-md-4 then 4 bhag ma hissa huncha ta 100% width and obviously we get 3 columns -->
-                    <!-- py-3 class of bootstrap means padding along y-axis is 3 -->
-                    <div class="card wow slideInUp" style="max-width: 14rem; ">
-                        <img src="img/violin.png" class="card-img-top" alt="Violin">
-                        <div class="card-body">
-                            <h5 class="card-title">Violin</h5>
-                            <p class="card-text">I have been passionately playing the violin for three years, and it has become my cherished musical escape.</p>
-                                <a href="https://www.instagram.com/aashra.music/" class="btn btn-primary">Watch me playing</a>
-    
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 py-3">
-                    <div class="card wow slideInUp" style="max-width: 14rem; ">
-                        <img src="img/piano.jpeg" class="card-img-top" alt="Keyboard">
-                        <div class="card-body">
-                            <h5 class="card-title">Piano</h5>
-                            <p class="card-text">Since my early days, piano hasn't just been a hobby or passion, but my cherished musical rendezvous that brings me immense joy.</p>
-                            <a href="https://www.instagram.com/aashra.music/" class="btn btn-primary">Watch me playing</a>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 py-3">
-                    <div class="card wow slideInUp" style="max-width: 14rem; ">
-                        <img src="img/aashraviolin.png" class="card-img-top" alt="Aashra playing the violin">
-                        <div class="card-body">
-                            <h5 class="card-title">aashra.music</h5>
-                            <p class="card-text">I curate an Instagram page dedicated to sharing my musical performances, fostering a community, a safe space for enthusiasts to connect.</p>
-                            <a href="https://www.instagram.com/aashra.music/" class="btn btn-primary">aashra.music</a>
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 py-3">
-                    <div class="card wow slideInUp" style="max-width: 14rem; ">
-                        <img src="img/mediumarticle.png" class="card-img-top" alt="Blogs">
-                        <div class="card-body">
-                            <h5 class="card-title">Blogs</h5>
-                            <p class="card-text">I also contribute to Medium, sharing my thoughts and expertise through blogs and articles.</p>
-                            <a href="https://medium.com/@aashrapradhan68/how-mystifying-is-life-isnt-it-a7968ff20035" class="btn btn-primary">Visit my blog profile</a>
-
-                        </div>
-                    </div>
-                </div>
-                </div>
-        </div>
-    </section>
-
-    <!-- portfolio -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <h2 class="title text-center w-100 wow fadeIn">My Coding Projects</h2>
-            </div>
-            <div class="row">
-                <div class="col-md-4 py-3">
-                    <div class="card wow slideInUp" style="max-width: 18rem;">
-                        <img src="img/vote.png" class="card-img-top" alt="Votingsystem">
-                        <div class="card-body">
-                            <h5 class="card-title">Voting System in C</h5>
-                            <p class="card-text">A system that can be implemented in a real-time workplace with inputs
-                                from the employees and the authorities as well.</p>
-                            <a href="https://github.com/aashra-pradhan/Voting-system-in-C" class="btn btn-primary">View
-                                Code</a>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 py-3">
-                    <div class="card wow slideInUp" style="max-width: 18rem;">
-                        <img src="img/music.jpg" class="card-img-top" alt="Capotuner webapp">
-                        <div class="card-body">
-                            <h5 class="card-title">CapoTuner webapp</h5>
-                            <p class="card-text">A webapp built to cater to all musical requirements of aspiring
-                                musicians. A musical haven for all musicians and music enthusiasts.</p>
-                            <a href="https://github.com/aashra-pradhan/CapoTuner-webapp" class="btn btn-primary">View
-                                Code</a>
-                            <a href="https://aashra-pradhan.github.io/CapoTuner-webapp/" class="btn btn-primary">Go to
-                                webapp</a>
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 py-3">
-                    <div class="card wow slideInUp" style="max-width: 18rem;">
-                        <img src="img/PDF-Merger.png" class="card-img-top" alt="PDF merger webapp">
-                        <div class="card-body">
-                            <h5 class="card-title">PDF Merger webapp</h5>
-                            <p class="card-text">A webapp built using HTML, CSS and vanilla JS, that users can input pdf
-                                files and get the files merged for their convenience.</p>
-                            <a href="https://github.com/aashra-pradhan/PDF-merger-webapp" class="btn btn-primary">View
-                                Code</a>
-                            <a href="https://aashra-pradhan.github.io/CapoTuner-webapp/" class="btn btn-primary">Go to
-                                webapp</a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- contact -->
-    <section id="contact">
-        <div class="container wow fadeIn" id="contactform"
-            style="border: 1px solid black; background-color: rgb(240, 95, 211); padding-top: 20px; padding-bottom: 20px; width:40%">
-            <div class="container d-flex justify-content-center">
-                <h2 class="featurette-heading fw-normal lh-1 wow fadeIn"
-                    style="text-align: center; padding-left:10px; padding-right: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-                    Contact me, I'd love to hear from you!</h2>
-
-            </div>
-            <div class="container d-flex align-items-center justify-content-center">
-                <form>
-                    <div class="mb-3">
-                        <label for="exampleInputName1" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">
-                            <p style="font-size: 10px;">This will remain confidential.</p>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputfeed1" class="form-label">Feedback</label>
-                        <input type="text" class="form-control" id="exampleInputfeed1" aria-describedby="emailHelp">
-                    </div>
-
-                    <button type="submit" class="btn btn-warning my-3">Submit</button>
-                </form>
             </div>
 
 
+            <div class="hero-portrait">
+
+                <img src="img/aashra-speaking.png" alt="Aashra speaking at St. Xavier's College" fetchpriority="high">
+
+                <p class="image-caption">
+                    At the Arul Hall, St. Xavier's College, Maitighar, Kathmandu.
+                </p>
+
+            </div>
+
+        </section>
 
 
-        </div>
-        <div class="container d-flex justify-content-center">
-            <h2 class="featurette-heading fw-normal lh-1" style="font-weight: bolder;">Find me on:</h2>
+        <!-- Introduction -->
+        <section class="section about-section" id="about">
 
-        </div>
-        <div class="container d-flex justify-content-center" style="margin-top: 10px;">
-            <a href="https://github.com/aashra-pradhan" class="link">GitHub</a>
-            <pre>  </pre>
-            <a href="https://www.linkedin.com/in/aashra-pradhan-96b8b4247/" class="link">LinkedIn</a>
-            <pre>  </pre>
-            <a href="https://www.instagram.com/aashra.music/" class="link">Instagram</a>
-        </div>
-        <div class="container d-flex justify-content-center" style="margin-top: auto; color:black;">
-           <p>E-Mail : aashrapradhan68@gmail.com <br>
-            Contact : +977 9842465760</p>
-        </div>
-        </div>
+            <div class="container">
 
-    </section>
+                <div class="section-heading">
+                    <span class="section-number">01 / ABOUT</span>
+                    <h2>A little about me.</h2>
+                </div>
 
-    <!-- back to top icon -->
-    <div class="container d-flex justify-content-center">
-        <a href="#home" id="backtotop" class="scroll-link"><i class="fa fa-arrow-circle-up fa-2x"
-                style="padding-top:20px; padding-right: 1rem;" id="social"></i></a>
-        <a href="https://github.com/aashra-pradhan" id="social"><i class="fa fa-github fa-2x"
-                style="padding-top:20px; padding-right: 1rem;" id="social"></i></a>
-                <a href="https://www.instagram.com/aashra.music/" id="social"><i class="fa fa-instagram fa-2x"
-                    style="padding-top:20px; padding-right: 1rem;" id="social"></i></a>
-                    <a href="https://www.linkedin.com/in/aashra-pradhan-96b8b4247/" id="social"><i class="fa fa-linkedin fa-2x"
-                        style="padding-top:20px;" id="social"></i></a>
+                <div class="about-grid">
 
-        <!-- here #home bhanera inpage link deko, ani here i means icon tag that be checked from bootstrap, fa-3x le icon ko size 3x badhako -->
-    </div>
+                    <div class="about-lead">
+                        <h3>
+                            A curious mind, a hands-on heart, and an endless appetite for figuring things out.
+                        </h3>
+                    </div>
+
+                    <div class="about-copy">
+
+                        <p>
+                            My journey began with a Bachelor's in
+                            Information Management, specialising in
+                            Information Technology, at St. Xavier's
+                            College, Maitighar, Kathmandu.
+                        </p>
+
+                        <p>
+                            Since then, I've explored different sides
+                            of the technology landscape, from software
+                            development and security research to data
+                            engineering and information systems.
+                        </p>
+
+                        <p>
+                            Along the way, research, student communities,
+                            leadership opportunities and conversations
+                            with people from different disciplines have
+                            shaped how I learn and approach my work.
+                        </p>
+
+                        <p>
+                            I also believe there's more to a person than
+                            what they do professionally. Music, instrument coaching,
+                            public speaking and creative expression have
+                            always been meaningful parts of my journey.
+                        </p>
+
+                        <a href="https://www.linkedin.com/in/aashra-pradhan/" target="_blank" rel="noopener noreferrer"
+                            class="text-link">
+                            More about my professional journey ↗
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="education-note">
+                    <div>
+                        <span class="small-label">EDUCATION</span>
+                        <h3>Bachelor's in Information Management</h3>
+                        <p>Information Technology · St. Xavier's College, Kathmandu</p>
+                    </div>
+
+                    <div class="education-score">
+                        <span class="small-label">AGGREGATE CGPA</span>
+                        <strong>3.92 / 4.00</strong>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Experience -->
+        <section class="section experience-section" id="experience">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-number">02 / EXPERIENCE</span>
+                    <h2>Where I've been learning and building.</h2>
+                    <p>
+                        My professional journey in a glimpse.
+                    </p>
+                </div>
+
+                <div class="experience-list">
+
+                    <article class="experience-item">
+
+                        <div class="experience-date">
+                            2026 — PRESENT
+                        </div>
+
+                        <div class="experience-details">
+                            <h3>Ycotek</h3>
+                            <p class="experience-role">Data Engineering</p>
+
+                            <p>
+                                Working with data engineering workflows,
+                                ETL development and data platforms.
+                                Exploring the practical side of building,
+                                transforming and validating data systems
+                                using Python, dbt and Snowflake.
+                            </p>
+
+                            <div class="tags">
+                                <span>Python</span>
+                                <span>dbt</span>
+                                <span>Snowflake</span>
+                                <span>ETL</span>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <article class="experience-item">
+
+                        <div class="experience-date">
+                            2025 — 2026
+                        </div>
+
+                        <div class="experience-details">
+                            <h3>SecurityPal</h3>
+                            <p class="experience-role">Security Research Analyst</p>
+
+                            <p>
+                                Worked on security reviews, GRC
+                                questionnaires, information security
+                                assessments, and vendor security assessments. Also contributed to internal
+                                knowledge sharing and team initiatives.
+                            </p>
+
+                            <div class="tags">
+                                <span>GRC</span>
+                                <span>Security Research</span>
+                                <span>Knowledge Sharing</span>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <article class="experience-item">
+
+                        <div class="experience-date">
+                            2024 — 2025
+                        </div>
+
+                        <div class="experience-details">
+                            <h3>Leapfrog Technology</h3>
+                            <p class="experience-role">Leapfrog Student Partner</p>
+
+                            <p>
+                                Participated in a student partnership
+                                initiative focused on industry exposure,
+                                learning and connecting with
+                                opportunities in technology.
+                            </p>
+
+                            <div class="tags">
+                                <span>Community</span>
+                                <span>Technology</span>
+                                <span>Leadership</span>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <article class="experience-item">
+
+                        <div class="experience-date">
+                            2023 — 2024 </div>
+
+                        <div class="experience-details">
+                            <h3>InfoDevelopers</h3>
+                            <p class="experience-role">React JS Intern</p>
+
+                            <p>
+                                An early professional experience in
+                                frontend development, working with React
+                                and learning the fundamentals of
+                                collaborative software development.
+                            </p>
+
+                            <div class="tags">
+                                <span>React</span>
+                                <span>JavaScript</span>
+                                <span>Frontend</span>
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Selected Work -->
+        <section class="section work-section" id="work">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-number">03 / SELECTED WORK</span>
+                    <h2>Things I've worked on.</h2>
+                    <p>
+                        A selection of projects and work that reflect
+                        different stages of my learning journey.
+                    </p>
+                </div>
+
+
+                <div class="work-grid">
+
+                    <article class="work-item">
+                        <span class="work-category">DATA ENGINEERING</span>
+
+                        <h3>Building data workflows</h3>
+
+                        <p>
+                            Working with ETL pipelines, data transformation,
+                            migration, validation and analytics-oriented
+                            data systems.
+                        </p>
+
+                        <span class="work-meta">
+                            Python · dbt · Snowflake
+                        </span>
+                    </article>
+
+
+                    <article class="work-item">
+                        <span class="work-category">SOFTWARE DEVELOPMENT</span>
+
+                        <h3>Real-life Projects</h3>
+
+                        <p>
+                            Explored different technologies and tech stacks, built projects inspired by real-world
+                            problems, and always found myself asking how things work, why they work that way, and how
+                            they could make life a little easier.
+                        </p>
+
+                        <a href="https://github.com/aashra-pradhan/" target="_blank" rel="noopener noreferrer"
+                            class="text-link">
+                            Explore projects ↗
+                        </a>
+                    </article>
+
+
+                    <article class="work-item">
+                        <span class="work-category">RESEARCH</span>
+
+                        <h3>Undergraduate research</h3>
+
+                        <p>
+                            Academic research experience through the
+                            Locke and Stiller Research Award, including
+                            research coordination and collaboration
+                            with a faculty supervisor.
+                        </p>
+
+                        <span class="work-meta">
+                            St. Xavier's College
+                        </span>
+                    </article>
+
+
+                    <article class="work-item">
+                        <span class="work-category">COMMUNITY & MENTORING</span>
+
+                        <h3>Sharing what I learn</h3>
+
+                        <p>
+                            Knowledge-transfer sessions for growing students, alongside mentoring and
+                            participation in technology communities.
+                        </p>
+
+                        <span class="work-meta">
+                            Learning · Leadership · Community
+                        </span>
+                    </article>
+
+                </div>
+
+                <div class="work-footer">
+                    <a href="https://github.com/aashra-pradhan" target="_blank" rel="noopener noreferrer"
+                        class="text-link">
+                        Explore my GitHub repositories ↗
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Beyond Work -->
+        <section class="section beyond-section" id="beyond">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-number">04 / BEYOND WORK</span>
+                    <h2>Life is beyond the titles.</h2>
+                </div>
+
+                <div class="beyond-intro">
+                    <p>
+                        Some of the things I cherish most have happened outside classrooms, job titles, and workspaces.
+                        In music, in conversations, in people I've met, things I've tried, and experiences I never quite
+                        planned for.
+                    </p>
+                </div>
+
+
+                <div class="beyond-grid">
+
+                    <article>
+                        <span class="beyond-index">01</span>
+                        <h3>Music</h3>
+                        <p>
+                            Violin and Piano. Music has been
+                            a constant in my life, and an entirely
+                            different way of expressing myself.
+                        </p>
+                        <a href="https://www.instagram.com/aashra.music/" target="_blank" rel="noopener noreferrer"
+                            class="text-link">
+                            Visit aashra.music ↗
+                        </a>
+                    </article>
+
+
+                    <article>
+                        <span class="beyond-index">02</span>
+                        <h3>Finding my voice</h3>
+                        <p>
+                            Over the years, I've found myself drawn to opportunities that let me speak, share, perform,
+                            and connect. Each experience has taught me something about confidence, expression, and
+                            finding my own voice.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <span class="beyond-index">03</span>
+                        <h3>People & ideas</h3>
+                        <p>
+                            From initiatives to collaborations and shared little ambitions, I've always enjoyed being
+                            part of something indulging exchanging perspectives.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <span class="beyond-index">04</span>
+                        <h3>Always a student</h3>
+                        <p>
+                            New interests, unfamiliar subjects, unexpected opportunities. There's always something new
+                            to stumble upon, and I quite like it that way.
+                        </p>
+                    </article>
+
+                </div>
+
+                <div class="recognition">
+                    <span class="small-label">A FEW MILESTONES ALONG THE WAY</span>
+
+                    <p>
+                        > Harvard Aspire Leaders Program
+                    </p>
+                    <p>
+                        > Leapfrog
+                        Student Partnership
+                    </p>
+                    <p>
+                        > Locke and Stiller
+                        Research Award
+                    </p>
+                    <p>
+                        > Nepal Hacks 3.0 Mentorship
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section class="section contact-section" id="contact">
+
+            <div class="container">
+
+                <span class="section-number">05 / GET IN TOUCH</span>
+
+                <h2>
+                    Good conversations can
+                    <span>lead somewhere interesting.</span>
+                </h2>
+
+                <p>
+                    Whether it's an interesting project, a research
+                    opportunity, a collaboration or simply a
+                    conversation, I'd love to hear from you.
+                </p>
+
+                <a href="mailto:aashrapradhan68@gmail.com" class="button-primary">
+                    Say hello <span>↗</span>
+                </a>
+
+                <div class="social-links">
+
+                    <a href="https://www.linkedin.com/in/aashra-pradhan/" target="_blank"
+                        rel="noopener noreferrer">LinkedIn ↗</a>
+
+                    <a href="https://github.com/aashra-pradhan" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+
+                    <a href="https://www.instagram.com/aashra.music/" target="_blank"
+                        rel="noopener noreferrer">Instagram ↗</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
     <!-- Footer -->
-    <!-- simple  footer -->
-    <div class="d-flex flex-column flex-sm-row justify-content-center py-3 my-3 border-top">
-        <p style="color: rgb(93, 93, 93); font-size: 12px;">© 2023 Aashra Pradhan. All rights reserved.</p>
-    </div>
+    <footer class="site-footer">
 
-    <!--JS Libraries import gareko(js chai body bhitra import garcham)( we do that using script bhanne tag)  -->
-    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/smooth-scroll.js"></script>
-    <script type="text/javascript" src="js/wow.js"></script>
-    <script type="text/javascript" src="js/particles.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-    <!-- hami script tag bhitra chai kei content lekhdainam but tyasko source attribute rakhcham ,,smooth-scroll.js if for smooth scrolling,,wow.js if for animation, to make the website look wow,,,app.js and particle.js is for the moving particles(tyo joon ko app ma pani cha ni chemistry ko bond haru jasto)-->
+        <div class="container footer-content">
+
+            <a href="#home" class="wordmark">aashra<span>.</span></a>
+
+            <p>
+                Made with curiosity and a little bit of creativity.
+            </p>
+
+            <p>
+                © <span id="current-year"></span> Aashra Pradhan
+            </p>
+
+        </div>
+
+    </footer>
+
 
     <script>
-        //for WOW.js library/framework activation for animation purposes
-        new WOW().init();
-        
-        // yo chai hamile scrolling behaviour lyauna afaile lekheko jquery code 
-        
-        $('.scroll-link').on('click', function (e) {
-            e.preventDefault();
-            $('html,body').animate({ scrollTop: $(this.hash).offset().top - 50 }, 500);
-        });
-
-        //esko matlab is, jaba .scroll-link class thichincha, taba, euta function ma direct
-        //hoincha, jasle e as a parameter lincha.
-        //jaba yo function bhitra chirincha, default behaviour rokincha,
-        //ani html ra body chai animate bhayera scroll hoincha
-        //500 is time in miliseconds, kati time ma chai scroll garne bhanera
-
-        // // for each active nav-item
-        // $('.nav-item').on('click', function (e) {
-        //     $('.nav-item').removeClass('active');
-        //     $(this).addClass('active');
-        // });
-        //ahile ko lagi yo comment out gardeko because ahile tyo scroll garda ni active change hune
-        //garna sakeko chuina so naramro nadekhos bhanera sablai always active ma rakhdeko chu
-
-        //esko matlab is jaba euta nav-item ma click garincha,
-        //sabai nav item bhitra ko 'active' class hataincha ani yo class(this) ma chai
-        //active class halincha
-
-        // for active nav-item by tracking scroll behavior
-        //tara yo chalena tesaile comment out gareko
-        // const sections = document.querySelectorAll("section");
-        // const navLi = document.querySelectorAll("nav .container ul li");
-        // window.addEventListener("scroll", () => {
-        //     let current = "";
-        //     sections.forEach((section) => {
-        //         const sectionTop = section.offsetTop;
-        //         const sectionHeight = section.clientHeight;
-        //         if (pageYOffset >= sectionTop - sectionHeight / 3) {
-        //             current = section.getAttribute("id");
-        //         }
-        //     });
-
-        //     navLi.forEach((li) => {
-        //         li.classList.remove("active");
-        //         if (li.classList.contains(current)) {
-        //             li.classList.add("active");
-        //         }
-        //     });
-        // });
-
+        document.getElementById("current-year").textContent =
+            new Date().getFullYear();
     </script>
+
 </body>
 
 </html>
